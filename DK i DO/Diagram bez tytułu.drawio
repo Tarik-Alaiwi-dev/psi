@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-14T17:59:34.102Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="V93VdfJmXhdwA-1k7Cl6" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-14T18:02:00.169Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="m7_u0HctSnbx2sPgdwHw" version="24.2.5" type="github">
   <diagram name="Strona-1" id="7YO8nz4pqUknpsq_Tmat">
     <mxGraphModel dx="654" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -75,6 +75,18 @@
         </mxCell>
         <mxCell id="kRv5YcQd3f4nlq0UNajE-31" value="- sporządź()&lt;div&gt;- ustalDate()&lt;/div&gt;&lt;div&gt;- zmienForme()&lt;/div&gt;&lt;div&gt;- zmienStatus()&lt;/div&gt;&lt;div&gt;- wyliczWartosc()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kRv5YcQd3f4nlq0UNajE-28">
           <mxGeometry y="128" width="160" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="kRv5YcQd3f4nlq0UNajE-32" value="Faktura" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="10" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="kRv5YcQd3f4nlq0UNajE-33" value="&lt;div&gt;- nrFaktury: Var&lt;/div&gt;&lt;div&gt;- dataWystawienia: Date&lt;/div&gt;&lt;div&gt;- dataPlatnosci: Date&lt;/div&gt;&lt;div&gt;- czyZaplacona: Boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kRv5YcQd3f4nlq0UNajE-32">
+          <mxGeometry y="26" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="kRv5YcQd3f4nlq0UNajE-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="kRv5YcQd3f4nlq0UNajE-32">
+          <mxGeometry y="120" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="kRv5YcQd3f4nlq0UNajE-35" value="- sporzadz()&lt;div&gt;-odznaczPlatnosc()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="kRv5YcQd3f4nlq0UNajE-32">
+          <mxGeometry y="128" width="160" height="42" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
