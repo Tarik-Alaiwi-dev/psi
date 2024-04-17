@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-17T19:35:28.154Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="BTEGQR8gDUg_BAyKJvdv" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-17T19:36:17.717Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="sZeVtvMr-btA6lVwp9CN" version="24.2.5" type="github">
   <diagram name="Strona-1" id="xJEaBT8h_i5WKtfCxUwu">
     <mxGraphModel dx="1620" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -17,16 +17,22 @@
           <mxGeometry y="128" width="160" height="210" as="geometry" />
         </mxCell>
         <mxCell id="sIBhL8HVa5YA8M3fXbEU-5" value="Koordynator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="210" width="160" height="338" as="geometry" />
+          <mxGeometry x="550" y="270" width="160" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="sIBhL8HVa5YA8M3fXbEU-6" value="&lt;div&gt;- id: int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;- nazwa: string&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;- opis: string&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;- cena: float&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;- dostępność: bool&amp;nbsp;&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="sIBhL8HVa5YA8M3fXbEU-5">
-          <mxGeometry y="26" width="160" height="94" as="geometry" />
+        <mxCell id="sIBhL8HVa5YA8M3fXbEU-6" value="- produkty: lista Produkt&amp;nbsp; &amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="sIBhL8HVa5YA8M3fXbEU-5">
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
         </mxCell>
         <mxCell id="sIBhL8HVa5YA8M3fXbEU-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="sIBhL8HVa5YA8M3fXbEU-5">
-          <mxGeometry y="120" width="160" height="8" as="geometry" />
+          <mxGeometry y="70" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="sIBhL8HVa5YA8M3fXbEU-8" value="&lt;div&gt;+ pobierz_id()&lt;/div&gt;&lt;div&gt;+ ustaw_id(id: int)&lt;/div&gt;&lt;div&gt;+ pobierz_nazwę()&lt;/div&gt;&lt;div&gt;+ ustaw_nazwę(nazwa: string)&lt;/div&gt;&lt;div&gt;+ pobierz_opis()&lt;/div&gt;&lt;div&gt;+ ustaw_opis(opis: string)&lt;/div&gt;&lt;div&gt;+ pobierz_cenę()&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ ustaw_cenę(cena: float)&lt;/div&gt;&lt;div&gt;+ czy_dostępny()&lt;/div&gt;&lt;div&gt;+ ustaw_dostępność(dostępność: bool)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="sIBhL8HVa5YA8M3fXbEU-5">
-          <mxGeometry y="128" width="160" height="210" as="geometry" />
+        <mxCell id="sIBhL8HVa5YA8M3fXbEU-8" value="&lt;div&gt;+ dodaj_produkt(produkt: Produkt)&lt;/div&gt;&lt;div&gt;+ edytuj_produkt(id: int, nowe_atrybuty: dict)&lt;/div&gt;&lt;div&gt;+ usuń_produkt(id: int)&lt;/div&gt;&lt;div&gt;+ przeglądaj_produkty()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="sIBhL8HVa5YA8M3fXbEU-5">
+          <mxGeometry y="78" width="160" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="sIBhL8HVa5YA8M3fXbEU-9" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=0.006;exitY=0.352;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.994;entryY=0.148;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="sIBhL8HVa5YA8M3fXbEU-8" target="sIBhL8HVa5YA8M3fXbEU-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="400" as="sourcePoint" />
+            <mxPoint x="490" y="400" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
