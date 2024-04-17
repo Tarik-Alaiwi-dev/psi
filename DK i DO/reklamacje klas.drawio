@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-17T19:19:54.831Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="BSCE2MJ9Sc6LiNCeEyr_" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-17T19:23:12.874Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="31Jhxs3UrLhpEdMRE59-" version="24.2.5" type="github">
   <diagram name="Strona-1" id="BfCBive3UCB2jplvildm">
     <mxGraphModel dx="1620" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -15,6 +15,30 @@
         </mxCell>
         <mxCell id="XwHRD3_UtsL1UbawrPZY-4" value="&lt;div&gt;+ dodaj_produkt(produkt: Produkt)&lt;/div&gt;&lt;div&gt;+ edytuj_produkt(id: int)&lt;/div&gt;&lt;div&gt;+ usuń_produkt(id: int)&lt;/div&gt;&lt;div&gt;+ przeglądaj_produkty()&lt;/div&gt;&lt;div&gt;+ zarejestruj_reklamację(reklamacja: Reklamacja)&lt;/div&gt;&lt;div&gt;+ przeglądaj_reklamacje()&lt;/div&gt;&lt;div&gt;+ edytuj_status_reklamacji(id: int, nowy_status: string)&lt;/div&gt;&lt;div&gt;+ usuń_reklamację(id: int)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XwHRD3_UtsL1UbawrPZY-1">
           <mxGeometry y="88" width="160" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="XwHRD3_UtsL1UbawrPZY-5" value="Reklamacja" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="210" width="160" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="XwHRD3_UtsL1UbawrPZY-6" value="&lt;div&gt;- id: int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;- opis: string&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;- status: string&lt;/div&gt;&lt;div&gt;- klient: Klient&lt;/div&gt;&lt;div&gt;- produkt: Produkt&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XwHRD3_UtsL1UbawrPZY-5">
+          <mxGeometry y="26" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="XwHRD3_UtsL1UbawrPZY-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="XwHRD3_UtsL1UbawrPZY-5">
+          <mxGeometry y="120" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="XwHRD3_UtsL1UbawrPZY-8" value="&lt;div&gt;+ pobierz_id()&lt;/div&gt;&lt;div&gt;+ ustaw_id(id: int)&lt;/div&gt;&lt;div&gt;+ pobierz_opis()&lt;/div&gt;&lt;div&gt;+ ustaw_opis(opis: string)&lt;/div&gt;&lt;div&gt;+ pobierz_status()&lt;/div&gt;&lt;div&gt;+ ustaw_status(status: string)&lt;/div&gt;&lt;div&gt;+ pobierz_klienta()&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;+ ustaw_klienta(klient: Klient)&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ pobierz_produkt()&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ ustaw_produkt(produkt: Produkt)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XwHRD3_UtsL1UbawrPZY-5">
+          <mxGeometry y="128" width="160" height="202" as="geometry" />
+        </mxCell>
+        <mxCell id="XwHRD3_UtsL1UbawrPZY-9" value="Produkt" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="210" width="200" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="XwHRD3_UtsL1UbawrPZY-10" value="&lt;div&gt;- id: int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;- nazwa: string&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;- opis: string&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;- cena: float&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;- dostępność: bool&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XwHRD3_UtsL1UbawrPZY-9">
+          <mxGeometry y="26" width="200" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="XwHRD3_UtsL1UbawrPZY-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="XwHRD3_UtsL1UbawrPZY-9">
+          <mxGeometry y="120" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="XwHRD3_UtsL1UbawrPZY-12" value="&lt;div&gt;+ pobierz_id()&lt;/div&gt;&lt;div&gt;+ ustaw_id(id: int)&lt;/div&gt;&lt;div&gt;+ pobierz_nazwę()&lt;/div&gt;&lt;div&gt;+ ustaw_nazwę(nazwa: string)&lt;/div&gt;&lt;div&gt;+ pobierz_opis()&lt;/div&gt;&lt;div&gt;+ ustaw_opis(opis: string)&lt;/div&gt;&lt;div&gt;+ pobierz_cenę()&lt;/div&gt;&lt;div&gt;+ ustaw_cenę(cena: float)&lt;/div&gt;&lt;div&gt;+ czy_dostępny()&lt;/div&gt;&lt;div&gt;+ ustaw_dostępność(dostępność: bool)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="XwHRD3_UtsL1UbawrPZY-9">
+          <mxGeometry y="128" width="200" height="232" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
